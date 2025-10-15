@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* soft gradient background */
+}
+
+/* Navbar styling */
+.navbar{
+    background: linear-gradient(90deg, #362a7c, #5f45d1); /* gradient navbar */
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover{
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    margin-left: 15px;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #ffc107;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Cards styling */
+.card {
+    border-radius: 12px;
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Project categories with vibrant colors */
+.project-flight {
+    border-left: 5px solid #0d6efd; 
+    background: linear-gradient(90deg, #e0f0ff, #cfe0ff);
+}
+.project-library {
+    border-left: 5px solid #198754;
+    background: linear-gradient(90deg, #e6f4ea, #d4eadf);
+}
+.project-ecommerce {
+    border-left: 5px solid #ffc107; 
+    background: linear-gradient(90deg, #fff8e0, #fff2c0);
+}
+
+/* Section spacing */
+section {
+    scroll-margin-top: 80px; 
+}
+
+/* Optional: subtle hover glow for project cards */
+.project-flight:hover,
+.project-library:hover,
+.project-ecommerce:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
